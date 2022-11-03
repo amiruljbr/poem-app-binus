@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Asus Zenbook UX410U Rose Golda",
+    "image_url": "https://eksekutifcomputer.com/wp-content/uploads/2019/01/Laptop-Asus-Zenbook-UX410U-Rose-Golda.jpg",
+    "price": 5000000,
+    "stock": 100,
+    "category": "Laptop"
+  },
+  {
+    "name": "Macbook 12 Retina MF855",
+    "image_url": "https://eksekutifcomputer.com/wp-content/uploads/2019/04/Laptop-Macbook-12-Retina-MF855-Early-2015-Silverh.jpg",
+    "price": 9000000,
+    "stock": 50,
+    "category": "Laptop"
+  },
+  {
+    "name": "Acer Aspire 4741",
+    "image_url": "https://eksekutifcomputer.com/wp-content/uploads/2019/04/Laptop-Acer-Aspire-4741-Core-i3.jpg",
+    "price": 6000000,
+    "stock": 100,
+    "category": "Laptop"
+  },
+  {
+    "name": "Lenovo Ideapad 110",
+    "image_url": "https://eksekutifcomputer.com/wp-content/uploads/2019/05/Laptop-Lenovo-Ideapad-110-14ISK-Core-i5-Black.jpg",
+    "price": 9000000,
+    "stock": 100,
+    "category": "Laptop"
+  },
+  {
+    "name": "HP 14 am015tx",
+    "image_url": "https://eksekutifcomputer.com/wp-content/uploads/2019/02/Laptop-HP-14-am015tx-Core-i5-Fullset.jpg",
+    "price": 4000000,
+    "stock": 100,
+    "category": "Laptop"
+  },
+  {
+    "name": "Toshiba Portege R930",
+    "image_url": "https://eksekutifcomputer.com/wp-content/uploads/2019/07/Laptop-Toshiba-Portege-R930.jpg",
+    "price": 8700000,
+    "stock": 100,
+    "category": "Laptop"
+  },
+  {
+    "name": "Samsung RC410",
+    "image_url": "https://eksekutifcomputer.com/wp-content/uploads/2019/06/Laptop-Samsung-RC410-Core-i5.jpg",
+    "price": 3000000,
+    "stock": 100,
+    "category": "Laptop"
+  },
+  {
+    "name": "Xiaomi Air",
+    "image_url": "https://eksekutifcomputer.com/wp-content/uploads/2020/01/DSC01785.jpg",
+    "price": 13000000,
+    "stock": 100,
+    "category": "Laptop"
+  },
+  {
+    "name": "DELL ALIENWARE 17 R5",
+    "image_url": "https://eksekutifcomputer.com/wp-content/uploads/2020/01/DSC01785.jpg",
+    "price": 2500000,
+    "stock": 100,
+    "category": "Laptop"
+  }
+]
