@@ -1,0 +1,25 @@
+{
+  "test": {
+    "username": "postgres",
+    "password": "1234",
+    "database": "poemapp",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "development": {
+    "username": "postgres",
+    "password": "wfT3bPlAPEOGNIVXVENu",
+    "database": "railway",
+    "host": "containers-us-west-120.railway.app",
+    "dialect": "postgres",
+    "port": "5599"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "wfT3bPlAPEOGNIVXVENu",
+    "database": "railway",
+    "host": "containers-us-west-120.railway.app",
+    "dialect": "postgres",
+    "port": "5599"
+  }
+}
