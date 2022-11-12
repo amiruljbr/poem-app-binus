@@ -1,4 +1,4 @@
-const {Poem} = require('../models');
+const {Poem, Feeling, Like, Emphaty, User } = require('../models');
 
 class PoemController {
   static getAllPoem(req,res,next){
@@ -6,7 +6,8 @@ class PoemController {
     Poem.findAll({
       order: [
         ['createdAt']
-      ]
+      ],
+      include: [User,Feeling]
     })
     .then(data=>{
       res.status(200).json(data)

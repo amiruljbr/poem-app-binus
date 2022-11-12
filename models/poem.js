@@ -25,13 +25,15 @@ module.exports = (sequelize, DataTypes) => {
       }
     },
     status: DataTypes.STRING,
-    UserId: DataTypes.INTEGER
+    UserId: DataTypes.INTEGER,
+    FeelingId: DataTypes.INTEGER
   }, {sequelize});
 
   Poem.associate = function(models) {
     // associations can be defined here
     Poem.belongsTo(models.User)
-    //Poem.belongsToMany(models.User, { through: 'Like' });
+    Poem.belongsTo(models.Feeling)
+    //Poem.belongsToMany(models.User, { through: 'Likes' });
     //Poem.belongsToMany(models.User, { through: 'Emphaty' });
   };
 

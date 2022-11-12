@@ -41,7 +41,11 @@ module.exports = (sequelize, DataTypes) => {
   User.associate = function(models) {
     // associations can be defined here
     User.hasMany(models.Poem);
+    // User.belongsToMany(models.Poem,{through: 'Likes'})
+    //User.belongsToMany(models.Poem,{through: 'Likes'})
   };
+
+  
 
   User.beforeCreate((instance,option) =>{
     const salt = bcrypt.genSaltSync(10)

@@ -27,10 +27,10 @@ module.exports = (sequelize, DataTypes) => {
     bg_color: DataTypes.STRING,
   }, {sequelize});
 
-  //Todo.associate = function(models) {
-    // associations can be defined here
-    //Todo.belongsTo(models.User)
-  //};
+  Feeling.associate = function(models) {
+    //associations can be defined here
+    Feeling.hasMany(models.Poem);
+  };
 
   //Todo.addHook('beforeCreate', (todo, options) => {
     //todo.status = 'uncompleted'

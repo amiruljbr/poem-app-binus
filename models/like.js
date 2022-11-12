@@ -26,10 +26,11 @@ module.exports = (sequelize, DataTypes) => {
     },
   }, {sequelize});
 
-  //Like.associate = function(models) {
-    // associations can be defined here
-    //Like.belongsTo(models.User)
-  //};
+  Like.associate = function(models) {
+    //associations can be defined here
+    Like.belongsTo(models.User)
+    Like.belongsTo(models.Poem)
+  };
 
   //Todo.addHook('beforeCreate', (todo, options) => {
   //  todo.status = 'uncompleted'
