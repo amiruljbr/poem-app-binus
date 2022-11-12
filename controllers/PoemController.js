@@ -82,7 +82,8 @@ class PoemController {
       title:req.body.title,
       description:req.body.description,
       status:'active',
-      UserId:req.userData.id
+      UserId:req.userData.id,
+      FeelingId:req.body.FeelingId
     }
 
     Poem.create(newPoem)
