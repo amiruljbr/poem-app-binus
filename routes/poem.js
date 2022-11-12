@@ -6,7 +6,7 @@ router.use(authentication)
 router.get('/',PoemController.getAllPoem);
 router.post('/',PoemController.added);
 router.delete('/:id',authorization,PoemController.delete);
-router.get('/:id',authorization,PoemController.edit);
+router.get('/:id',PoemController.edit);
 router.put('/:id',authorization,PoemController.editPost);
 //router.put('/:id/done',authorization,PoemController.editPostDone);
 
