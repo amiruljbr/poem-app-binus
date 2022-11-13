@@ -33,6 +33,7 @@ module.exports = (sequelize, DataTypes) => {
     // associations can be defined here
     Poem.belongsTo(models.User)
     Poem.belongsTo(models.Feeling)
+    Poem.hasMany(models.Like)
     //Poem.belongsToMany(models.User, { through: 'Likes' });
     //Poem.belongsToMany(models.User, { through: 'Emphaty' });
   };

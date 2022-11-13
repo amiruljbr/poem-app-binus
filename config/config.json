@@ -8,18 +8,18 @@
   },
   "development": {
     "username": "postgres",
-    "password": "n1huou1fmRRaalnAS7bc",
+    "password": "lDhxRKn4p0xmMERKyxFq",
     "database": "railway",
-    "host": "containers-us-west-108.railway.app",
+    "host": "containers-us-west-113.railway.app",
     "dialect": "postgres",
-    "port": "6407"
+    "port": "5568"
   },
   "production": {
     "username": "postgres",
-    "password": "n1huou1fmRRaalnAS7bc",
+    "password": "lDhxRKn4p0xmMERKyxFq",
     "database": "railway",
-    "host": "containers-us-west-108.railway.app",
+    "host": "containers-us-west-113.railway.app",
     "dialect": "postgres",
-    "port": "6407"
+    "port": "5568"
   }
 }

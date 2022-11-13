@@ -7,7 +7,7 @@ class PoemController {
       order: [
         ['createdAt']
       ],
-      include: [User,Feeling]
+      include: [Like]
     })
     .then(data=>{
       res.status(200).json(data)

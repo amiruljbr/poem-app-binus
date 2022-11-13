@@ -28,6 +28,8 @@ module.exports = (sequelize, DataTypes) => {
 
   Like.associate = function(models) {
     //associations can be defined here
+    //Like.belongsTo(models.Poem)
+    //Like.hasOne(models.Like, { sourceKey: 'PoemId', foreignKey: 'id' })
     Like.belongsTo(models.User)
     Like.belongsTo(models.Poem)
   };
