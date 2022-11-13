@@ -42,6 +42,8 @@ module.exports = (sequelize, DataTypes) => {
     // associations can be defined here
     User.hasMany(models.Poem);
     User.hasMany(models.Like);
+    User.hasMany(models.Emphaty);
+    User.hasMany(models.Comment);
     //User.belongsToMany(models.Poem,{through: 'Likes'})
     //User.belongsToMany(models.Poem,{through: 'Likes'})
   };

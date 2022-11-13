@@ -34,6 +34,8 @@ module.exports = (sequelize, DataTypes) => {
     Poem.belongsTo(models.User)
     Poem.belongsTo(models.Feeling)
     Poem.hasMany(models.Like)
+    Poem.hasMany(models.Emphaty)
+    Poem.hasMany(models.Comment)
     //Poem.belongsToMany(models.User, { through: 'Likes' });
     //Poem.belongsToMany(models.User, { through: 'Emphaty' });
   };
