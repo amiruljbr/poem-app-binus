@@ -1,4 +1,4 @@
-const {User} = require('../models');
+const {User, Comment, Poem, Emphaty, Like} = require('../models');
 const bcrypt = require('bcrypt');
 const { Op } = require("sequelize");
 const jwt = require('jsonwebtoken');
@@ -6,15 +6,35 @@ const { OAuth2Client } = require('google-auth-library');
 const client = new OAuth2Client(process.env.CLIENT_ID);
 
 class UserController {
-  // static getAllUser(req,res, next){
-  //   User.findAll()
-  //   .then(data=>{
-  //     res.status(200).json(data)
-  //   })
-  //   .catch(err=>{
-  //     res.status(500).json(err)
-  //   })
-  // }
+  static getBookmark(req,res, next){
+    User.findAll({
+      where:{
+        id:req.userData.id
+      }, 
+      include: [{model: Comment, include: [Poem]},{model: Emphaty, include: [Poem]}, {model: Like, include: [Poem]}]
+    })
+    .then(data=>{
+      res.status(200).json(data)
+    })
+    .catch(err=>{
+      res.status(500).json(err)
+    })
+  }
+
+  static findUserId(req,res, next){
+    User.findAll({
+      where:{
+        username:req.params.username
+      }, 
+      include: [Poem, {model: Comment, include: [Poem]},{model: Emphaty, include: [Poem]}, {model: Like, include: [Poem]}]
+    })
+    .then(data=>{
+      res.status(200).json(data)
+    })
+    .catch(err=>{
+      res.status(500).json(err)
+    })
+  }
 
   static added(req,res,next){
     let newUser = {
